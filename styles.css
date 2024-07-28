@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0ffe0; /* Light green background */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #645300; /* Dark green background for header */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+header .logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin-left: 2rem;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+header .nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+header .nav-links a:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    background: url('hero_background.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 80px; /* Height of the header */
+}
+
+.hero-section .hero-content {
+    max-width: 600px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b7ff00;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: aliceblue;
+}
+
+.hero-section .cta-button {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.about-section, .services-section, .features-section, .contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-section h2, .services-section h2, .features-section h2, .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services-section .service, .features-section .feature {
+    margin: 2rem 0;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}

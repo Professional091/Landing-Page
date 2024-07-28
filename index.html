@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logob1.png" alt="YourLogo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>We create amazing websites and web applications.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are a dedicated team of professionals committed to delivering high-quality web solutions.<br> Our expertise spans across various domains to provide you with exceptional service.</p>
+    </section>
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>We build responsive and functional websites.</p>
+        </div>
+        <div class="service">
+            <h3>Graphic Design</h3>
+            <p>We create visually appealing graphics and designs.</p>
+        </div>
+        <div class="service">
+            <h3>SEO Optimization</h3>
+            <p>We help your website rank higher in search engines.</p>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Responsive Design</h3>
+            <p>Our websites look great on any device, whether it's a phone, tablet, or desktop.</p>
+        </div>
+        <div class="feature">
+            <h3>Fast Loading</h3>
+            <p>Optimized to load quickly and efficiently, ensuring a smooth user experience.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure</h3>
+            <p>We prioritize security to protect your data and your users' information.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
